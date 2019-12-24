@@ -32,22 +32,19 @@ def split_coins(amount_to_send, txid_to_spend, utxo_index, n, network):
     print(response.status_code, response.reason)
     print(response.text)
 
+
 if __name__ == '__main__':
     SelectParams('testnet')
 
-    ######################################################################
-    # TODO: set these parameters correctly
-    private_key = None
+    private_key = CBitcoinSecret('cUc74jGA9VAPBtSBimEcG4G2y6V4CByNzxF3bzyFrrPvPLXcG7ie')
     public_key = private_key.pub
     address = P2PKHBitcoinAddress.from_pubkey(public_key)
 
-    amount_to_send = None # amount of BTC in the output you're splitting minus fee
-    txid_to_spend = (
-        'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    utxo_index = None # index of the output you are spending, indices start at 0
-    n = None # number of outputs to split the input into
+    amount_to_send = 0.0005  # amount of BTC in the output you're splitting minus fee
+    txid_to_spend = ('ccbdbe0c9e59321325d42656dd138217da9d23c45d27ace970e2e72dcc8bec60')
+    utxo_index = 1  # index of the output you are spending, indices start at 0
+    n = 30  # number of outputs to split the input into
     # For n, choose a number larger than what you immediately need, 
     # in case you make mistakes.
-    ######################################################################
 
     split_coins(amount_to_send, txid_to_spend, utxo_index, n, network_type)
