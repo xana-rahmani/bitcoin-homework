@@ -89,3 +89,10 @@ bob_address_BCY = P2PKHBitcoinAddress.from_pubkey(bob_public_key_BCY)
 # print('--------------------------')
 # print('bob_address_BCY: ', bob_address_BCY)
 # print('alice_address_BCY: ', alice_address_BCY)
+
+# my_address:  n3WtKNZVBpQXgW5xLw9zUcCKGKMotMfH58
+# alice_address_BTC:  n3KDxVM3fUhN7rwSzerypyeveNMi8XCrSQ
+# bob_address_BTC:  mhcQCHYYBwW6uF5D67EYABF3Z3Xnp4PFqb
+# --------------------------
+# bob_address_BCY:  msb2WG5XDrw6piXc9V76y1gtFbg2XzmKP8
+# alice_address_BCY:  mik9nhJNz4hqcnUrHubQt7S69fMNwb4Anb
