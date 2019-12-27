@@ -2,7 +2,7 @@ from utils import *
 from config import (faucet_address, network_type)
 from bitcoin.wallet import CBitcoinSecret, P2PKHBitcoinAddress
 from ex1 import P2PKH_scriptPubKey
-from ex42a import Q42a_txout_scriptPubKey
+from happybirthday import Q42a_txout_scriptPubKey
 
 
 hamedPrivate = CBitcoinSecret('cN2uenBHn5HYKExZHvwj5rj8nNKjrSxM68diEvfrHwkjzKXf4afx')
