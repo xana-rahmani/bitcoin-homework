@@ -41,7 +41,7 @@ OP_ELSE = CScriptOp(0x67)
 OP_EQUAL = CScriptOp(0x87)
 OP_ENDIF = CScriptOp(0x68)
 Q31a_txout_scriptPubKey = [OP_2DUP, 0, 2, farazPublic, ataPublic, 2, OP_CHECKMULTISIG, OP_IF, 0, 0, OP_EQUAL, OP_ELSE,
-                          0, 1, faraz_address, ata_address, 2, OP_CHECKMULTISIG, OP_IF, 0, 3, s1public, s2public, s3public,
+                          0, 1, farazPublic, ataPublic, 2, OP_CHECKMULTISIG, OP_IF, 0, 3, s1public, s2public, s3public,
                           s4public, s5public, 5, OP_CHECKMULTISIGVERIFY, OP_ENDIF, OP_ENDIF]
 
 # the signatures of faraz and ata are  on top of the stack
