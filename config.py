@@ -8,13 +8,13 @@ SelectParams('testnet')
 
 faucet_address = CBitcoinAddress('mv4rnyY3Su5gjcDNzbMLKBQkBicCtHUtFB')
 
-# For questions 1-3, we are using 'btc-test3' network. For question 4, you will
+# For questions 1-5, we are using 'btc-test3' network. For question 6, you will
 # set this to be either 'btc-test3' or 'bcy-test'
-network_type = 'btc-test3'
+network_type = 'bcy-test'
 
 
 ######################################################################
-# This section is for Questions 1-3
+# This section is for Questions 1-5
 # TODO: Fill this in with your private key.
 #
 # Create a private key and address pair in Base58 with keygen.py
@@ -30,7 +30,7 @@ my_address = P2PKHBitcoinAddress.from_pubkey(my_public_key)
 
 
 ######################################################################
-# NOTE: This section is for Question 4
+# NOTE: This section is for Question 6
 # TODO: Fill this in with address secret key for BTC testnet3
 #
 # Create address in Base58 with keygen.py
@@ -68,12 +68,12 @@ bob_address_BTC = P2PKHBitcoinAddress.from_pubkey(bob_public_key_BTC)
 
 # Only to be imported by alice.py
 alice_secret_key_BCY = CBitcoinSecret.from_secret_bytes(
-    x('ce968710e32d8bbc4aa1c3c837d873c923b049432e9a8cd81c393fca2d6e8f44'))
+    x('e634a78fa4421cb4df9647c15a7efac7417f4f55d1035a70d731e5414671fbc9'))
 
 # Only to be imported by bob.py
 # Bob should have coins!!
 bob_secret_key_BCY = CBitcoinSecret.from_secret_bytes(
-    x('85a468c6716cd94fa7a4bb886f0b1481ffc4651a8a275bc983294f49db7e4fa6'))
+    x('4c20fe6737be7c3521dcd05fd317283e19a6823957d5b806f96f06611d6b0833'))
 
 # Can be imported by alice.py or bob.py
 alice_public_key_BCY = alice_secret_key_BCY.pub

@@ -1,7 +1,7 @@
 import time
 import alice
 import bob
-from Q4 import (alice_txid_to_spend, alice_utxo_index, alice_amount_to_send,
+from ex6 import (alice_txid_to_spend, alice_utxo_index, alice_amount_to_send,
                 bob_txid_to_spend, bob_utxo_index, bob_amount_to_send,
                 btc_test3_chain_height, bcy_test_chain_height, alice_locktime,
                 bob_locktime, tx_fee, broadcast_transactions, alice_redeems)
@@ -166,6 +166,7 @@ def atomic_swap(broadcast_transactions=False, alice_redeems=True):
             print('Sleeping for alice_locktime blocks to pass locktime...')
             time.sleep(10 * 60 * max(alice_locktime - bob_locktime, 0))
             alice.broadcast_BTC(completed_alice_return_tx)
+
 
 if __name__ == '__main__':
     atomic_swap(broadcast_transactions, alice_redeems)

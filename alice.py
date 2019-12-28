@@ -2,13 +2,13 @@ from bitcoin.core import Hash160, b2x, CMutableTransaction
 from bitcoin.core.script import CScript, SignatureHash, SIGHASH_ALL
 from bitcoin.core.scripteval import VerifyScript, SCRIPT_VERIFY_P2SH
 
-from Q1 import P2PKH_scriptPubKey, P2PKH_scriptSig
-from Q4 import coinExchangeScript, coinExchangeScriptSig1, coinExchangeScriptSig2
-from lib.config import (bob_public_key_BTC, bob_address_BTC,
+from ex1 import P2PKH_scriptPubKey, P2PKH_scriptSig
+from ex6 import coinExchangeScript, coinExchangeScriptSig1, coinExchangeScriptSig2
+from config import (bob_public_key_BTC, bob_address_BTC,
     alice_secret_key_BTC, alice_public_key_BTC, alice_address_BTC, 
     alice_secret_key_BCY, alice_public_key_BCY, alice_address_BCY, 
     bob_public_key_BCY, bob_address_BCY)
-from lib.utils import create_txin, create_txout, create_OP_CHECKSIG_signature, create_signed_transaction, broadcast_transaction
+from utils import create_txin, create_txout, create_OP_CHECKSIG_signature, create_signed_transaction, broadcast_transaction
 
 
 #############################################################################
